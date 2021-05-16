@@ -53,6 +53,7 @@ For scope of this assignment, we need to build following APIs
 2. /POST Questions
 
  a. Input
+ 
  i. Question Text - Mandatory. Min length 50 characters, Max length 500
  characters
  ii. CompanyId - Optional
@@ -61,33 +62,42 @@ For scope of this assignment, we need to build following APIs
  v. User ID - the Id of user submitting the question
 
  b. Output
+ 
  i. ID - ID of question saved in database
 
 3. /POST Answers
+
  a. Input
+ 
  i. Question ID - Question for which answer is being submitted
  ii. Answer Text - Mandatory. Min length 50 characters, Max length 500
  characters
  iii. User ID- the ID of user submitting answer
 
  b. Output
+ 
  i. ID - ID of answer saved in database
 
 4. /POST Comments (Post comments for a given answer)
+
  a. Input
+ 
  i. Answer ID - Answer for which comment is being posted - Mandatory
  ii. UserID - User posting the answer - Mandatory
  iii. Comment Text - Comment Text - Mandatory. Min length 50 characters,
  Max length 500 characters
 
  b. Output
+ 
  i. ID - ID of comment saved in database
 
 5. /POST Question_likes (For a user to like a given question)
+
  a. Input
  i. QuestionID - Question which is being likedii. UserId - ID of user liking the question
  
 6. /POST Answer_likes (For a user liking the given answer)
+ 
  a. Input
  i. AnswerID - Answer which is being liked
  ii. UserId - ID of user liking the answer
