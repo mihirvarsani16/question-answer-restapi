@@ -45,10 +45,10 @@ For scope of this assignment, we need to build following APIs
 
 1. CRUD APIs for all master data, which includes following entities/tables
 
-   a. Company
-   b. Topics
-   c. Subtopics
-   d. Tags
+   a. Company.
+   b. Topics.
+   c. Subtopics.
+   d. Tags.
 
 2. /POST Questions
 
