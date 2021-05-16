@@ -11,7 +11,7 @@ them. Broadly 1 entity should correspond to 1 table in system
 
 3. Topic - Topic for which a question was being asked eg: Data Structures, Algorithms
 
-    a. Subtopic - A topic can have various subtopics. Eg: For topic Data Structures, it can
+  a. Subtopic - A topic can have various subtopics. Eg: For topic Data Structures, it can
 have subtopics like Stacks, Queues, Lists etc.
 
 4. Answer - A questions can have multiple answers
