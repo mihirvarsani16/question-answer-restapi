@@ -54,7 +54,7 @@ For scope of this assignment, we need to build following APIs
 
    a. Input
  
-i. Question Text - Mandatory. Min length 50 characters, Max length 500
+   i. Question Text - Mandatory. Min length 50 characters, Max length 500
 characters
 ii. CompanyId - Optional
 iii. SubtopicId - Mandatory
