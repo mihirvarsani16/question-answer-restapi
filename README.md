@@ -110,19 +110,19 @@ query parameters
    a. Input
 
    i. Companies - List of companies - Optional
-ii. Subtopics - List of subtopics - Optional
-iii. Likes - Questions with more votes than votes sent as input - Optional
-iv. Date - Questions asked after a given date - Optional
-v. Tags - List of tags - - Optional
+   ii. Subtopics - List of subtopics - Optional
+   iii. Likes - Questions with more votes than votes sent as input - Optional
+   iv. Date - Questions asked after a given date - Optional
+   v. Tags - List of tags - - Optional
 
-  b. Output
+   b. Output
 
-  i. Question ID
-ii. Question Text
-iii. Companies - List of companies for which the question was asked
-iv. Likes - Number of likes of the question
-v. Answer - Answer with most likes for the given question
-vi. Tags - Tags associated with the given question
+   i. Question ID
+   ii. Question Text
+   iii. Companies - List of companies for which the question was asked
+   iv. Likes - Number of likes of the question
+   v. Answer - Answer with most likes for the given question
+   vi. Tags - Tags associated with the given question
 
 8. /GET Question - Get following details of a question for a given question id
 
