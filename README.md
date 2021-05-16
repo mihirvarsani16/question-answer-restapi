@@ -11,8 +11,8 @@ them. Broadly 1 entity should correspond to 1 table in system
 
 3. Topic - Topic for which a question was being asked eg: Data Structures, Algorithms
 
-a. Subtopic - A topic can have various subtopics. Eg: For topic Data Structures, it can
-have subtopics like Stacks, Queues, Lists etc.
+ a. Subtopic - A topic can have various subtopics. Eg: For topic Data Structures, it can
+ have subtopics like Stacks, Queues, Lists etc.
 
 4. Answer - A questions can have multiple answers
 
@@ -45,14 +45,14 @@ For scope of this assignment, we need to build following APIs
 
 1. CRUD APIs for all master data, which includes following entities/tables
 
-a. Company
-b. Topics
-c. Subtopics
-d. Tags
+ a. Company
+ b. Topics
+ c. Subtopics
+ d. Tags
 
 2. /POST Questions
 
-a. Input
+ a. Input
  i. Question Text - Mandatory. Min length 50 characters, Max length 500
  characters
  ii. CompanyId - Optional
@@ -60,49 +60,49 @@ a. Input
  iv. Tags - List of tags - Optional
  v. User ID - the Id of user submitting the question
 
-b. Output
+ b. Output
  i. ID - ID of question saved in database
 
 3. /POST Answers
-a. Input
+ a. Input
  i. Question ID - Question for which answer is being submitted
  ii. Answer Text - Mandatory. Min length 50 characters, Max length 500
  characters
  iii. User ID- the ID of user submitting answer
 
-b. Output
+ b. Output
  i. ID - ID of answer saved in database
 
 4. /POST Comments (Post comments for a given answer)
-a. Input
+ a. Input
  i. Answer ID - Answer for which comment is being posted - Mandatory
  ii. UserID - User posting the answer - Mandatory
  iii. Comment Text - Comment Text - Mandatory. Min length 50 characters,
  Max length 500 characters
 
-b. Output
+ b. Output
  i. ID - ID of comment saved in database
 
 5. /POST Question_likes (For a user to like a given question)
-a. Input
+ a. Input
  i. QuestionID - Question which is being likedii. UserId - ID of user liking the question
  
 6. /POST Answer_likes (For a user liking the given answer)
-a. Input
+ a. Input
  i. AnswerID - Answer which is being liked
  ii. UserId - ID of user liking the answer
 
 7. /GET Filter_Questions - Returns list of questions based on the combination of following
 query parameters
 
-a. Input
+ a. Input
  i. Companies - List of companies - Optional
  ii. Subtopics - List of subtopics - Optional
  iii. Likes - Questions with more votes than votes sent as input - Optional
  iv. Date - Questions asked after a given date - Optional
  v. Tags - List of tags - - Optional
 
-b. Output
+ b. Output
  i. Question ID
  ii. Question Text
  iii. Companies - List of companies for which the question was asked
@@ -112,16 +112,15 @@ b. Output
 
 8. /GET Question - Get following details of a question for a given question id
 
-a. Question Text
-
-b. List of answers for the given question with following details
+ a. Question Text
+ b. List of answers for the given question with following details
  i. Answer text
  ii. User Id of user who answered the question
  iii. Number of likes for the answer
  iv. List of comments of the answer, along with date and user who made the
  comment
 
-c. Number of likes that the question has
-d. Companies for which the question was asked
-e. Tags for the question
-f. Topics for the question
+ c. Number of likes that the question has
+ d. Companies for which the question was asked
+ e. Tags for the question
+ f. Topics for the question
