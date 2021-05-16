@@ -61,63 +61,63 @@ iii. SubtopicId - Mandatory
 iv. Tags - List of tags - Optional
 v. User ID - the Id of user submitting the question
 
-b. Output
+   b. Output
  
-i. ID - ID of question saved in database
+   i. ID - ID of question saved in database
 
 3. /POST Answers
 
-a. Input
+   a. Input
  
-i. Question ID - Question for which answer is being submitted
+   i. Question ID - Question for which answer is being submitted
 ii. Answer Text - Mandatory. Min length 50 characters, Max length 500
 characters
 iii. User ID- the ID of user submitting answer
 
-b. Output
+   b. Output
  
-i. ID - ID of answer saved in database
+   i. ID - ID of answer saved in database
 
 4. /POST Comments (Post comments for a given answer)
 
-a. Input
+   a. Input
  
-i Answer ID - Answer for which comment is being posted - Mandatory
+   i Answer ID - Answer for which comment is being posted - Mandatory
 ii. UserID - User posting the answer - Mandatory
 iii. Comment Text - Comment Text - Mandatory. Min length 50 characters,
 Max length 500 characters
 
-b. Output
+   b. Output
  
-i. ID - ID of comment saved in database
+   i. ID - ID of comment saved in database
 
 5. /POST Question_likes (For a user to like a given question)
 
-a. Input
+   a. Input
 
-i. QuestionID - Question which is being likedii. UserId - ID of user liking the question
+   i. QuestionID - Question which is being likedii. UserId - ID of user liking the question
  
 6. /POST Answer_likes (For a user liking the given answer)
  
-a. Input
+   a. Input
 
-i. AnswerID - Answer which is being liked
+   i. AnswerID - Answer which is being liked
 ii. UserId - ID of user liking the answer
 
 7. /GET Filter_Questions - Returns list of questions based on the combination of following
 query parameters
 
-a. Input
+   a. Input
 
-i. Companies - List of companies - Optional
+   i. Companies - List of companies - Optional
 ii. Subtopics - List of subtopics - Optional
 iii. Likes - Questions with more votes than votes sent as input - Optional
 iv. Date - Questions asked after a given date - Optional
 v. Tags - List of tags - - Optional
 
-b. Output
+  b. Output
 
-i. Question ID
+  i. Question ID
 ii. Question Text
 iii. Companies - List of companies for which the question was asked
 iv. Likes - Number of likes of the question
@@ -126,15 +126,15 @@ vi. Tags - Tags associated with the given question
 
 8. /GET Question - Get following details of a question for a given question id
 
-a. Question Text
-b. List of answers for the given question with following details
-i. Answer text
-ii. User Id of user who answered the question
-iii. Number of likes for the answer
-iv. List of comments of the answer, along with date and user who made the
-comment
+   a. Question Text
+   b. List of answers for the given question with following details
+   i. Answer text
+   ii. User Id of user who answered the question
+   iii. Number of likes for the answer
+   iv. List of comments of the answer, along with date and user who made the
+   comment
 
-c. Number of likes that the question has
-d. Companies for which the question was asked
-e. Tags for the question
-f. Topics for the question
+   c. Number of likes that the question has
+   d. Companies for which the question was asked
+   e. Tags for the question
+   f. Topics for the question
